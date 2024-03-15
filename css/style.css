@@ -3,7 +3,31 @@
 :root {
   --cor-de-fundo: #EBECEE;
   --branco:#fff;
+
+  --cor-menu-titulo: #EB9B00;
 }
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+/*** FONT-WEIGHT ***/
+.poppins-300 {
+  font-weight: 300;
+}
+
+.poppins-500 {
+  font-weight: 500;
+}
+
+.poppins-700 {
+  font-weight: 700;
+}
+
+
 
 body {
   background-color: var(--cor-de-fundo);
