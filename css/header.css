@@ -5,6 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  position: relative;
 }
 
 .cabecalho__menu-hamburguer {
@@ -23,4 +25,49 @@
 
 .container__imagem {
   padding: 1rem;
+}
+
+
+/*** LISTA MENU-HAMBURGUER ***/
+.menu__lista {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:checked ~ .menu__lista {
+  display: block;
+  
+  background-color: var(--branco);
+  border-top:2px solid ;
+
+  min-width: 300px;
+  
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.menu__lista-titulo, .menu__lista-item {
+  padding: 1.5rem 1rem;
+}
+
+.menu__lista-titulo {
+  padding-bottom: 0.5rem;
+
+  line-height: 1.5rem;
+
+  color: var(--cor-menu-titulo);
+}
+
+.menu__lista-item {
+  text-transform: uppercase;
+
+  background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  cursor: pointer;
 }
