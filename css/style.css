@@ -3,15 +3,9 @@
 :root {
   --cor-de-fundo: #EBECEE;
   --branco:#fff;
+  --laranja: #EB9B00;
 
-  --cor-menu-titulo: #EB9B00;
-}
-
-html {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-
+  --font-principal: "Poppins", sans-serif;
 }
 
 /*** FONT-WEIGHT ***/
@@ -28,6 +22,11 @@ html {
 }
 
 
+html {
+  font-family: var(--font-principal);
+  font-style: normal;
+  font-weight: 400;
+}
 
 body {
   background-color: var(--cor-de-fundo);
